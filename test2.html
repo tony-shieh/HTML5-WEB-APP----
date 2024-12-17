@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('https://source.unsplash.com/1600x900/?restaurant,food');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to Gourmet Bistro</h1>
+  </div>
+
+  <!-- Menu Section -->
+  <div class="container">
+    <h2 class="center-align">Our Menu</h2>
+    <div class="row">
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza">
+          </div>
+          <div class="card-content">
+            <h5>Margherita Pizza</h5>
+            <p>A classic Italian pizza with fresh basil, mozzarella, and tomato sauce.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+          </div>
+          <div class="card-content">
+            <h5>Spaghetti Carbonara</h5>
+            <p>Creamy spaghetti with pancetta, parmesan, and a hint of black pepper.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l4">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://source.unsplash.com/400x300/?salad" alt="Salad">
+          </div>
+          <div class="card-content">
+            <h5>Caesar Salad</h5>
+            <p>Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Section -->
+  <div class="container">
+    <h3 class="center-align">Reserve Your Table</h3>
+    <form action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="_self">
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input id="name" type="text" name="entry.YOUR_NAME_FIELD_ID" required>
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">email</i>
+        <input id="email" type="email" name="entry.YOUR_EMAIL_FIELD_ID" required>
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">phone</i>
+        <input id="phone" type="tel" name="entry.YOUR_PHONE_FIELD_ID">
+        <label for="phone">Phone Number</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">date_range</i>
+        <input id="date" type="date" name="entry.YOUR_DATE_FIELD_ID" required>
+        <label for="date">Reservation Date</label>
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">group</i>
+        <input id="guests" type="number" name="entry.YOUR_GUESTS_FIELD_ID" required>
+        <label for="guests">Number of Guests</label>
+      </div>
+
+      <div class="center-align">
+        <button class="btn waves-effect waves-light" type="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Gourmet Bistro</h5>
+          <p class="grey-text text-lighten-4">The best dining experience in the city!</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
